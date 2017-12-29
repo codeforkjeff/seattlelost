@@ -1,0 +1,20 @@
+
+wiki:
+  image: citieslost:latest
+  ports:
+    - 8080:80
+  links:
+    - database
+  volumes:
+    - ./images:/var/www/html/w/images
+    - ./map/config.json:/var/www/html/map/config.json
+    - ./citieslost_city_specific.php:/var/www/html/w/citieslost_city_specific.php
+    - ./city_specific:/opt/citieslost/city_specific
+    # for development
+    #- /home/jeff/citieslost/map:/var/www/html/map
+  env_file: environment
+database:
+  image: mariadb
+  volumes:
+    - ./mariadb_data:/var/lib/mysql
+  env_file: environment

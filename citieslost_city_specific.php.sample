@@ -1,0 +1,22 @@
+<?php
+
+# city specific stuff goes here
+
+$wgSitename = "SeattleLost";
+
+$wgServer = "http://yourdomain.com";
+
+$wgLogo = $wgScriptPath . '/resources/assets/seattle_lost_logo.png';
+
+function cl_geocode_seattle($address) {
+    if(!preg_match('/seattle.+wa/i', $address)) {
+        $address = trim($address);
+        if(substr($address, -1) != ',') {
+            $address .= ",";
+        }
+        $address .= "seattle, wa";
+    }
+    return cl_geocode($address);
+}
+
+$clGeocodeFunction = 'cl_geocode_seattle';

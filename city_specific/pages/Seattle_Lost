@@ -1,0 +1,25 @@
+
+{{big|Welcome to the Seattle Lost wiki and map project.}}
+
+== Stuff You Can Do Here ==
+
+<div style="float: right; margin: 0.5em 0 0 0.5em; text-align: center;">
+[[File:map-screenshot.png|link={{SERVER}}/map]]
+<div>[{{SERVER}}/map Check out the interactive map]</div>
+</div>
+
+* Browse the list of '''{{PAGESINCATEGORY:Lost}} [[:Category:Lost|lost places]]''' cataloged here
+* Browse the list of '''[[:Category:Endangered|endangered places]]'''
+* New and updated places:
+<news limit="10" categories="place" nominor>
+** [[{{{pagename}}}]] - {{{date}}}
+</news>
+* [[Contribute|Contribute to this wiki]]
+
+<div style="clear: both;"></div>
+
+== Credits ==
+
+This project was inspired by [[Ghosts of Seattle Past]].
+
+__NOTOC__
